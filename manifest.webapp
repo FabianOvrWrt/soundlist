@@ -1,8 +1,11 @@
 { 	"name": "Folder Player",
-	"version": "2.0",
-	"description": "mp3 player without ball breakings",
+	"version": "0.2",
+	"description": "A fork of Folder Player by Andrea Magro. A mp3 player without ball breakings",
 	"launch_path": "/index.html", 
-	"developer": { "name": "Andrea Magro" }, 
+	"developer": {
+		"name": "FabianOvrWrt",
+		"url": "https://github.com/fabianovrwrt"
+	},
 	"icons": {
 		"60": "/images/fp_60.png",
 		"120": "/images/fp_120.png",
