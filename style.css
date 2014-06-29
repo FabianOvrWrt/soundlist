@@ -1,0 +1,229 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font: normal 10px "FiraSans", sans-serif;
+  background: #f0f0f0;
+}
+
+body {
+  position: relative;
+}
+
+table#table_player{ display: none; width: 100%; text-align: center; }
+table#table_folders{ width: 100%}
+td.tdfolder { border: 1px solid #f0f0f0; border-radius: 0px;
+	background-color: #C2C2C2; width: 100%; padding: 0px 4px;}
+td.tdfile { border: 1px solid #f0f0f0; border-radius: 0px;
+	background-color: #C2C2C2; padding: 5px 2px;}
+td.tdfoldname { border: 2px solid #f0f0f0; background-color: #AAA; padding: 6px 6px;}
+td.tdback { border: 2px solid #f0f0f0; background-color: #AAA; width: 33px; 
+	text-align: center; }
+
+td#td_plfileicon{ background-color: #C2C2C2; border: 0px solid #888; border-radius: 0px; }
+td#td_plfile{ background-color: #C2C2C2; border: 0px solid #aaa; border-radius: 0px; height: 6rem; }
+table#table_plbuttons{ background-color: #f0f0f0; border: 0px solid #242D33; border-radius: 0px; width:100%; margin: 0 0 0 3.5; }
+
+td#td_plprevtrack{ width: 60px; height: 60px; background: url(images/prev.png) no-repeat 0rem center; }
+td#td_plpause{width: 60px; height: 60px; background: url(images/play.png) no-repeat 0rem center;  }
+td#td_plstop{width: 60px; height: 60px; background: url(images/stop.png) no-repeat 0rem center;  }
+td#td_plnexttrack{width: 60px; height: 60px; background: url(images/next.png) no-repeat 0rem center;  }
+
+span.sp_foldername { font: 1.8rem/2.8rem "FiraSans", Sans-serif; }
+span.sp_foldertitle { font: 1.8rem/2.8rem "FiraSans", Sans-serif; font-weight: bold; }
+span.sp_filename { font: 1.8rem/2.8rem "FiraSans", Sans-serif; }
+span.sp_files {font: 1.2rem/1.6rem "FiraSans", Sans-serif; }
+span.playlistcounter { font: 1.4rem/1.4rem "FiraSans", Sans-serif;
+	vertical-align: bottom; font-weight: normal; }
+
+div#div_plfilename { text-align: center;
+     font: 1.4rem/2.0rem "FiraSans", Sans-serif; font-weight: normal;
+	color: #2f2f2f; }
+div#div_pltime { text-align: center;
+     margin: 5 0 0 0;
+     font: 1.4rem/2.0rem "FiraSans", Sans-serif; color: #2f2f2f; }
+
+div#linguetta{
+	display: block; position: fixed; 
+	border: 0px solid #232C32;
+	height: 22px; width: 45px; 
+	background: url(images/ling_up.png) repeat-x 0 0;
+	background-color: rgba(0,173,173,0.8);
+     margin: 2 0 0 1.5rem;
+}
+
+section[role="region"] > header:first-child {
+  position: fixed;
+  z-index: 10;
+  padding: 0;
+  height: 4.7rem; width: 100%;
+  color: #fff;
+  background-color: #00ADAD;
+  background-size: auto 100%;
+  border: none;
+}
+
+section[role="region"] > header:first-child h1 {
+  font: 400 2.4rem/4.8rem "FiraSans", Sans-serif;
+  text-align: left;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  margin: -0.2 0 0 1.6rem;
+  height: 100%
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] {
+  height: 100%;
+  float: right;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] a,
+section[role="region"] > header:first-child menu[type="toolbar"] button {
+  height: 3rem;
+  min-width: 5rem;
+  width: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  line-height: 5rem;
+  float: center;
+  background: none;
+  padding: 0 0;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  text-shadow: none;
+  position: relative;
+  z-index: 5;
+}
+
+section[role="region"] > header:first-child > a {
+  position: absolute;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+  background: url(images/separator-large.png) no-repeat 2rem center;
+  overflow: hidden;
+}
+
+
+section[role="region"] > header:first-child menu[type="toolbar"] a:last-child,
+section[role="region"] > header:first-child menu[type="toolbar"] button:last-child {
+  background: url(images/separator.png) no-repeat left center;
+  margin-left: -0.4rem;
+  z-index: 1;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] {
+  padding: 0;
+  margin: 0;
+}
+
+section[role="region"] > header:first-child button {
+  border: none;
+  background: none;
+  padding: 0;
+  overflow: hidden;
+  font: 200 1.1rem/1.4em "FiraSans", Sans-serif;
+  color: #fff;
+  border-radius: 0;
+  text-decoration: none;
+  margin-top: 0.9rem;
+}
+
+section[role="region"] > header:first-child button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] button:not(:disabled):active  {
+  background: #3A4852 !important;
+  transition: background 0.2s ease;
+  border-bottom: solid 0.1rem rgba(0, 0, 0, 0.2) !important;
+}
+
+section[role="region"] > header:first-child .icon.icon-settings {
+  background-image: url(images/sync.png);
+}
+section[role="region"] > header:first-child .icon.icon-commute {
+  background-image: url(images/playlist.png);
+}
+
+
+/* Icon definitions */
+section[role="region"] > header:first-child .icon {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 -1rem;
+  background: transparent no-repeat center center;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+  height: 2.8rem;
+}
+
+
+
+
+button {
+  height: 3rem;
+  min-width: 5rem;
+  width: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  line-height: 5rem;
+  float: left;
+  background: none;
+  padding: 0 1.75rem;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  text-shadow: none;
+  position: relative;
+  z-index: 5;
+  border: none;
+  background: none;
+  padding: 0;
+  overflow: hidden;
+  font: 400 1.5rem/1.1em "FiraSans", Sans-serif;
+  color: #fff;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+button:not(:disabled):active  {
+  background: #008aaa !important;
+  transition: background 0.2s ease;
+  border-bottom: solid 0.1rem rgba(0, 0, 0, 0.2) !important;
+}
+span.icon {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 -1rem;
+  background: transparent no-repeat center center;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+  height: 2.8rem;
+}
+
+span.icon.icon-back {
+  background-image: url(images/back.png);
+}
+menu[type="toolbar"] {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  float: right;
+}
