@@ -1,26 +1,29 @@
-{ 	"name": "Folder Player",
-	"version": "0.2",
-	"description": "A fork of Folder Player by Andrea Magro. A mp3 player without ball breakings",
-	"launch_path": "/index.html", 
-	"developer": {
-		"name": "FabianOvrWrt",
-		"url": "https://github.com/fabianovrwrt"
-	},
-	"icons": {
-		"60": "/images/fp_60.png",
-		"120": "/images/fp_120.png",
-		"128": "/images/fp_128.png" 
-	}, 
-	"default_locale": "en", 
-	"orientation" : ["portrait"],
-	"type":"privileged",
-	"permissions": {
-		"device-storage:music": {
-			"description": "Add, read or modify files",
-		 	"access": "readwrite" },
-		"audio-channel-content": { "description": "Play music files in background" }
-	}
-	
-	
-		
+{
+  "name": "Folder Player",
+  "version": "0.5",
+  "description": "A fork of Folder Player by Andrea Magro. A mp3 player without ball breakings",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "FabianOvrWrt",
+    "url": "https://github.com/fabianovrwrt"
+  },
+  "icons": {
+    "60": "/images/fp_60.png",
+    "120": "/images/fp_120.png",
+    "128": "/images/fp_128.png"
+  },
+  "default_locale": "en",
+  "orientation": [
+    "portrait"
+  ],
+  "type": "privileged",
+  "permissions": {
+    "device-storage:music": {
+      "description": "Add, read or modify files",
+      "access": "readwrite"
+    },
+    "audio-channel-content": {
+      "description": "Play music files in background"
+    }
+  }
 }
