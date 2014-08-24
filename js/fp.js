@@ -267,7 +267,7 @@ function pause() {
 
 function update_display() { if(!stopped) { 
 	ind=currsong_index+1;
-	document.getElementById('div_plfilename').innerHTML='Track n°'+ ind +': ' + getname(currsong_name);
+	document.getElementById('div_plfilename').innerHTML='#'+ ind +': ' + getname(currsong_name);
 	str=timetostring(audio1.currentTime)+" / "+timetostring(audio1.duration);
 	//document.getElementById('cons2').innerHTML=str;
 	document.getElementById('div_pltime').innerHTML=str;

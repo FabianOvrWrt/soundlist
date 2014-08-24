@@ -10,7 +10,8 @@
   "icons": {
     "60": "/images/fp_60.png",
     "120": "/images/fp_120.png",
-    "128": "/images/fp_128.png"
+    "128": "/images/fp_128.png",
+    "284": "/images/fp_284.png"
   },
   "default_locale": "en",
   "orientation": [
