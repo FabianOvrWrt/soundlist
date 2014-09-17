@@ -1,5 +1,5 @@
 {
-  "name": "Folder Player",
+  "name": "Soundlist",
   "version": "0.5",
   "description": "A fork of Folder Player by Andrea Magro. A mp3 player without ball breakings",
   "launch_path": "/index.html",
