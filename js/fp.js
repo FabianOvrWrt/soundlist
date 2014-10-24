@@ -77,7 +77,7 @@ function file_touchend(tevent) {
 
 	
 function scan_music() {
-	document.getElementById('table_folders').innerHTML="<h3>Loading...</h3>";
+	document.getElementById('table_folders').innerHTML="<font color=#0E8F8F><h3><center>...</center></h3></font>";
 	//stoppo tutto (resetto la playlist etc)
 	stop(); showfolders();
 	//svuoto l'array dei file

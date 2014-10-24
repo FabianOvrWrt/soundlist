@@ -2,8 +2,9 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font: normal 10px 'FiraSans', Sans-serif;
+  font: normal 11px 'FiraSans', Sans-serif;
   background: #f0f0f0;
+  line-height: 9.5px;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 table#table_player{ display: none; width: 100%; text-align: center; }
-table#table_folders{ width: 100%; padding-top: 4; padding-bottom: 2;}
+table#table_folders{ width: 100%; padding-top: 24; padding-bottom: 2;}
 td.tdfolder { border: 2px solid #f0f0f0; border-radius: 8px;
 	background-color: #D0D0D0; width: 100%; padding: 4px 8px;}
 td.tdfile { border: 2px solid #f0f0f0; border-radius: 8px;
@@ -20,28 +21,28 @@ td.tdfoldname { border: 2px solid #f0f0f0; border-radius: 0px; background-color:
 td.tdback { border: 2px solid #f0f0f0; background-color: #1EBDBD; width: 38px; 
 	text-align: center; font: 1.4rem/2.0rem "FiraSans", Sans-serif; color: #fff; }
 
-td#td_plfileicon{ background-color: #D0D0D0; border: 4px solid #f0f0f0; border-radius: 16px; }
-td#td_plfile{ background-color: #D0D0D0; border: 2px solid #f0f0f0; border-radius: 12px; height: 9.2rem; }
-table#table_plbuttons{ background-color: #f0f0f0; border: 0px solid #f0f0f0; border-radius: 40px; width:100%; margin: -2 0 0 0; }
+td#td_plfileicon{ background-color: #D0D0D0; border: 4px solid #f0f0f0; border-radius: 12px; }
+td#td_plfile{ background-color: #D0D0D0; border: 2px solid #f0f0f0; border-radius: 12px; height: 8rem; }
+table#table_plbuttons{ background-color: #f0f0f0; border: 0px solid #f0f0f0; border-radius: 0px; width:100%; margin: -4 0 0 0; }
 
 td#td_plprevtrack{ width: 60px; height: 60px; background: url(images/prev.png) no-repeat 0.8rem center; }
 td#td_plpause{width: 60px; height: 60px; background: url(images/play.png) no-repeat 0.8rem center;  }
 td#td_plstop{width: 60px; height: 60px; background: url(images/stop.png) no-repeat 0.8rem center;  }
 td#td_plnexttrack{width: 60px; height: 60px; background: url(images/next.png) no-repeat 0.8rem center;  }
 
-span.sp_foldername { font: 1.8rem/2.8rem "FiraSans", Sans-serif; }
-span.sp_foldertitle { font: 1.8rem/2.8rem "FiraSans", Sans-serif; font-style: italic; color: #fff }
-span.sp_filename { font: 1.8rem/2.8rem "FiraSans", Sans-serif; }
+span.sp_foldername { font: 1.6rem/2.8rem "FiraSans", Sans-serif; }
+span.sp_foldertitle { font: 1.6rem/2.8rem "FiraSans", Sans-serif; font-style: italic; color: #fff }
+span.sp_filename { font: 1.6rem/2.8rem "FiraSans", Sans-serif; }
 span.sp_files {font: 1.2rem/1.6rem "FiraSans", Sans-serif; }
 span.playlistcounter { font: 1.4rem/1.4rem "FiraSans", Sans-serif;
 	vertical-align: bottom; font-weight: normal; }
 
 div#div_plfilename { text-align: center;
-     font: 1.4rem/2.0rem "FiraSans", Sans-serif; font-weight: normal;
+     font: 1.33rem/1.8rem "FiraSans", Sans-serif; font-style: oblique; font-weight: 400;
 	color: #2f2f2f; }
 div#div_pltime { text-align: center;
      margin: 5 0 0 0;
-     font: 1.4rem/2.0rem "FiraSans", Sans-serif; color: #2f2f2f; }
+     font: 1.4rem/2.0rem "FiraSans", Sans-serif; color: #2f2f2f; font-weight: 400; }
 
 div#linguetta{
 	display: block; position: fixed; 
@@ -56,7 +57,7 @@ section[role="region"] > header:first-child {
   position: fixed;
   z-index: 1;
   padding: ;
-  height: 5rem; width: 100%;
+  height: 4.5rem; width: 100%;
   color: #fff;
   background-color: #00ADAD;
   background-size: auto 100%;
@@ -64,8 +65,8 @@ section[role="region"] > header:first-child {
 }
 
 section[role="region"] > header:first-child h1 {
-  font-size: 2.3rem;
-  line-height: 5rem;
+  font-size: 2.12rem;
+  line-height: 4.8rem;
   text-align: left;
   color: #fff;
   white-space: nowrap;
@@ -86,16 +87,15 @@ section[role="region"] > header:first-child menu[type="toolbar"] {
 
 section[role="region"] > header:first-child menu[type="toolbar"] a,
 section[role="region"] > header:first-child menu[type="toolbar"] button {
-  height: 3rem;
+  height: 3.2rem;
   min-width: 5rem;
   width: auto;
-  margin-bottom: 0;
+  padding-left: 0.5rem;
+  margin-right: 0.2rem;
   border-radius: 0;
-  line-height: 5rem;
+  line-height: 4rem;
   float: center;
   background: none;
-  padding: 0 0;
-  -moz-box-sizing: border-box;
   text-align: center;
   text-shadow: none;
   position: relative;
@@ -133,7 +133,7 @@ section[role="region"] > header:first-child button {
   color: #fff;
   border-radius: 0;
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 
 section[role="region"] > header:first-child button:focus {
